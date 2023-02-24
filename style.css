@@ -30,7 +30,7 @@ body{
 .prograssbarfront{
     position: absolute;
     height: 4px;
-    width: 100%;
+    width: 10%;
     background-color: green;
     border: none;
     z-index: -1;
@@ -41,10 +41,47 @@ body{
 .step{
     width: 30px;
     height: 30px;
-    background-color: whi;
+    background-color: white;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-border: 4px solid lightgray;
+    border: 4px solid lightgray;
+    color: lightgray;
+}
+.step.ckd{
+    color:green;
+    border-color: green;
+}
+.step.ckd small{
+    position: absolute;
+    bottom: -20px;
+    font-family: cursive;
+}
+.btn{
+    background-color: slateblue;
+    border: none;
+    color: white;
+    padding: 10px 20px ;
+    margin:  70px 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,.3);
+
+}
+.btn:hover{
+    opacity: .9;
+}
+.btn:active{
+    transform: scale(0.97);
+}
+.btn:disabled{
+    background-color: lightgray;
+}
+@media (max-width : 500px ) {
+    .progressCOnt{
+        width: 90vw;
+
+    }
+    
 }
