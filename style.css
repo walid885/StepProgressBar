@@ -30,13 +30,14 @@ body{
 .prograssbarfront{
     position: absolute;
     height: 4px;
-    width: 10%;
+    width: 0%;
     background-color: green;
     border: none;
     z-index: -1;
     margin: 0;
     top: 50%;
     transform: translateY(-50%);
+    transition: .4s linear width;
 }
 .step{
     width: 30px;
@@ -52,6 +53,8 @@ body{
 .step.ckd{
     color:green;
     border-color: green;
+    transition: all .4s linear;
+    transition-delay: .3s;
 }
 .step.ckd small{
     position: absolute;
